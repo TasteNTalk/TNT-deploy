@@ -1,4 +1,5 @@
 import React from 'react'
+import './index.css'
 import Querypage from './components/Querypage/Querypage'
 import { Route, Routes } from 'react-router-dom'
 import Firstpage from './components/Firstpage/Firstpage'
@@ -10,6 +11,8 @@ import Inbox from './pages/Inbox/Inbox'
 import Blogs from './pages/Blogs/Blogs'
 import Courses from './pages/Courses/Courses'
 import Shopping from './pages/Shopping/Shopping'
+import Footer from './pages/Footer/Footer'
+import Profile from './pages/Profile/Profile'
 
 
 const App = () => {
@@ -29,8 +32,14 @@ const App = () => {
         <Route path = "/blogs" element= {<Blogs/>} />
         <Route path = "/courses" element= {<Courses/>} />
         <Route path = "/shopping" element= {<Shopping/>} />
+        <Route path= '/myprofile' element= {<Profile/>} />
+
+
+
 
       </Routes>
+
+    
     </div>
   )
 }
