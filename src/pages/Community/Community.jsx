@@ -4,7 +4,7 @@ const Community = () => {
     return (
         <div className="bg-[#002140]  min-h-screen ">
 
-            <div className="pt-10 px-4 md:px-6 lg:px-8 container mx-auto">
+            <div className="container ml-[250px] -mt-[720px] py-12 px-4 md:px-6 w-fit ">
                 <div className="bg-gradient-to-r from-black/40 via-black/25 to-transparent rounded-2xl overflow-hidden shadow-xl mb-8">
                     <div className="p-6 md:p-8 lg:p-10 flex flex-col md:flex-row items-center">
                         <div className="md:w-3/5 mb-6 md:mb-0">

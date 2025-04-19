@@ -5,7 +5,7 @@ const Courses = () => {
     <div>
       <div className="bg-[#002140] min-h-screen text-gray-800">
 
-<main className="pt-24 pb-12 px-4 md:px-8 max-w-7xl mx-auto">
+<main className="container ml-[250px] -mt-[720px] py-12 px-4 md:px-6 w-fit ">
     <section className="bg-gradient-to-tr from-black/40 via-black/25 to-transparent rounded-2xl shadow-xl overflow-hidden mb-12 transform hover:scale-[1.02] transition-transform duration-300">
         <div className="flex flex-col md:flex-row items-center">
             <div className="md:w-1/2 p-8 md:p-12">
@@ -356,8 +356,7 @@ const Courses = () => {
             </div>
         </div>
     </section>
-    </main>
-    <footer className="bg-gradient-to-r from-black via-black/60 to-transparent] rounded-2xl shadow-xl p-6 mb-8 text-white">
+    <footer className="bg-gradient-to-r from-black via-black/60 to-transparent] rounded-2xl shadow-xl p-6 mt-8 text-white">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             <div>
                 <div className="flex items-center gap-2 mb-4">
@@ -435,6 +434,8 @@ const Courses = () => {
             </div>
         </div>
     </footer>
+    </main>
+   
 </div>
     </div>
   )
