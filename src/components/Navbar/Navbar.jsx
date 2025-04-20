@@ -2,7 +2,7 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import homeicon from "../../assets/Homeicon.svg";
 import tntlogo from "../../assets/tntLogo.png";
-import profileicon from "../../assets/Profile.svg";
+import profileicon from "../../assets/profile.svg";
 import map from "../../assets/pngegg.png";
 import notificationicon from "../../assets/notification.svg";
 import coursesicon from "../../assets/Courses.svg";
