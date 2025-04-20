@@ -17,6 +17,7 @@ import Setting from './pages/Setting/Setting'
 import Feedback from './pages/feedback/feedback'
 import Help from './pages/Help/Help'
 import Report from './pages/Report/Report'
+import Blocked from './pages/Blocked/Blocked'
 
 
 const App = () => {
@@ -41,6 +42,7 @@ const App = () => {
         <Route path= '/feedback' element= {<Feedback/>} />
         <Route path= '/help' element= {<Help/>} />
         <Route path= '/report' element= {<Report/>} />
+        <Route path= '/blocked' element= {<Blocked/>} />
 
 
 
