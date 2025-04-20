@@ -14,6 +14,7 @@ import Shopping from './pages/Shopping/Shopping'
 import Footer from './pages/Footer/Footer'
 import Profile from './pages/Profile/Profile'
 import Setting from './pages/Setting/Setting'
+import Feedback from './pages/feedback/feedback'
 
 
 const App = () => {
@@ -35,6 +36,7 @@ const App = () => {
         <Route path = "/shopping" element= {<Shopping/>} />
         <Route path= '/myprofile' element= {<Profile/>} />
         <Route path= '/setting' element= {<Setting/>} />
+        <Route path= '/feedback' element= {<Feedback/>} />
 
 
 

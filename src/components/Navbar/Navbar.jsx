@@ -165,12 +165,12 @@ const Navbar = ({ children }) => {
               >
                 Settings
               </NavLink>
-              <a
-                href="#"
+              <NavLink
+                to="/feedback"
                 className="block px-4 py-2 text-[#002140] font-medium transition-all duration-200 hover:bg-[#002140]/10 hover:translate-x-1.5"
               >
                 Feedback
-              </a>
+              </NavLink>
               <a
                 href="#"
                 className="block px-4 py-2 text-[#002140] font-medium transition-all duration-200 hover:bg-[#002140]/10 hover:translate-x-1.5"
