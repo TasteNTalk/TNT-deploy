@@ -3,7 +3,7 @@ import React from 'react'
 const Landingpage = () => {
   return (
 <div
-    className="bg-gradient-to-br from-[#002140] to-[#004a8f] min-h-screen font-serif text-[#e2e4d6] m-0 p-0 box-border"
+    className="bg-[#002140] font-serif text-[#e2e4d6] container ml-[250px] -mt-[720px] py-8 px-4 md:px-6 w-auto"
   >
 
   {/* <!-- Navigation Container --> */}
