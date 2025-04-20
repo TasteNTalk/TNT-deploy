@@ -14,7 +14,6 @@ import Shopping from './pages/Shopping/Shopping'
 import Footer from './pages/Footer/Footer'
 import Profile from './pages/Profile/Profile'
 import Setting from './pages/Setting/Setting'
-import Feedback from './pages/feedback/feedback'
 import Help from './pages/Help/Help'
 import Report from './pages/Report/Report'
 import Blocked from './pages/Blocked/Blocked'
@@ -40,7 +39,7 @@ const App = () => {
         <Route path = "/shopping" element= {<Shopping/>} />
         <Route path= '/myprofile' element= {<Profile/>} />
         <Route path= '/setting' element= {<Setting/>} />
-        <Route path= '/feedback' element= {<Feedback/>} />
+        
         <Route path= '/help' element= {<Help/>} />
         <Route path= '/report' element= {<Report/>} />
         <Route path= '/blocked' element= {<Blocked/>} />
