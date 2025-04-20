@@ -45,7 +45,7 @@ const Login = () => {
                         {/* <Leaf className="h-6 w-6 text-krishi-500" /> */}
                       </div>
                     </div>
-                    <h2 className="text-2xl font-bold text-gray-800">Welcome to KrishiMitra</h2>
+                    <h2 className="text-2xl font-bold text-gray-800">Welcome to TasteNTalk</h2>
                     <p className="text-gray-600 text-sm mt-1">Login using your Google account</p>
                   </div>
 
