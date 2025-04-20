@@ -18,6 +18,7 @@ import Feedback from './pages/feedback/feedback'
 import Help from './pages/Help/Help'
 import Report from './pages/Report/Report'
 import Blocked from './pages/Blocked/Blocked'
+import Login from './components/Login/Login'
 
 
 const App = () => {
@@ -26,7 +27,7 @@ const App = () => {
 
       <Routes>
 
-        <Route path = "/" element= {<Firstpage/>} />
+        <Route path = "/" element= {<Login/>} />
         <Route path = "/query" element= {<Querypage/>} />
         <Route path = "/home" element= {<Landingpage/>} />
         <Route path = "/submit" element= {<Landingpage/>} />
