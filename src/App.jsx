@@ -16,6 +16,7 @@ import Profile from './pages/Profile/Profile'
 import Setting from './pages/Setting/Setting'
 import Feedback from './pages/feedback/feedback'
 import Help from './pages/Help/Help'
+import Report from './pages/Report/Report'
 
 
 const App = () => {
@@ -39,6 +40,7 @@ const App = () => {
         <Route path= '/setting' element= {<Setting/>} />
         <Route path= '/feedback' element= {<Feedback/>} />
         <Route path= '/help' element= {<Help/>} />
+        <Route path= '/report' element= {<Report/>} />
 
 
 
