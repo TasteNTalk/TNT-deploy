@@ -15,6 +15,7 @@ import Footer from './pages/Footer/Footer'
 import Profile from './pages/Profile/Profile'
 import Setting from './pages/Setting/Setting'
 import Feedback from './pages/feedback/feedback'
+import Help from './pages/Help/Help'
 
 
 const App = () => {
@@ -37,6 +38,7 @@ const App = () => {
         <Route path= '/myprofile' element= {<Profile/>} />
         <Route path= '/setting' element= {<Setting/>} />
         <Route path= '/feedback' element= {<Feedback/>} />
+        <Route path= '/help' element= {<Help/>} />
 
 
 
