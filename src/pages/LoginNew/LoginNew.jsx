@@ -24,11 +24,21 @@ const LoginNew = () => {
       const data = await res.json();
   
       if (res.ok) {
+<<<<<<< HEAD
         // Handle successful login (e.g., storing token, redirecting)
         onLoginSuccess(data.token, data.userId);
         navigate("/home");
       } else {
         // Handle error response
+=======
+        // ✅ Store token in localStorage
+        localStorage.setItem("token", data.token);
+        localStorage.setItem("userId", data.userId);
+  
+        // ✅ Redirect to homepage
+        navigate("/home");
+      } else {
+>>>>>>> c52d2aa (Changes in submodule)
         alert(data.message || "Login failed");
       }
     } catch (error) {
@@ -37,6 +47,10 @@ const LoginNew = () => {
     }
   };
   
+<<<<<<< HEAD
+=======
+  
+>>>>>>> c52d2aa (Changes in submodule)
 
   return (
     <div className="bg-[#002140] min-h-screen flex justify-center items-center p-4">
