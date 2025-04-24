@@ -28,7 +28,7 @@ const Firstpage = () => {
 
         <div className="flex flex-row gap-4 w-full justify-evenly">
           
-          <NavLink to={'/submit'}
+          <NavLink to={'/LoginNew'}
           
             className="bg-gradient-to-r from-indigo-600 from-18% to-indigo-800 to-90% text-white py-2 px-4 rounded hover:bg-gradient-to-r hover:from-indigo-800 hover:from-18% hover:to-indigo-600 hover:to-90% hover:ease-in-out shadow shadow-black hover:shadow-lg hover:shadow-black hover:text-lg hover:drop-shadow active:bg-gradient-to-r active:from-indigo-700 active:from-18% active:to-indigo-500 active:to-90% active:ease-in-out active:shadow-lg active:shadow-black active:text-lg"
             // onClick={() => (window.location.href = './login.html')}
@@ -37,7 +37,7 @@ const Firstpage = () => {
             
           </NavLink>
 
-          <NavLink to={'/query'}
+          <NavLink to={'/login'}
             className="bg-gradient-to-r from-indigo-600 from-18% to-indigo-800 to-90% text-white py-2 px-4 rounded hover:bg-gradient-to-r hover:from-indigo-800 hover:from-18% hover:to-indigo-600 hover:to-90% hover:ease-in-out shadow shadow-black hover:shadow-lg hover:shadow-black hover:text-lg hover:drop-shadow active:bg-gradient-to-r active:from-indigo-700 active:from-18% active:to-indigo-500 active:to-90% active:ease-in-out active:shadow-lg active:shadow-black active:text-lg"
             // onClick={() => (window.location.href = 'instructor_query_page.html')}
           >

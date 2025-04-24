@@ -3,7 +3,6 @@ import './index.css'
 import Querypage from './components/Querypage/Querypage'
 import { Route, Routes } from 'react-router-dom'
 import Firstpage from './components/Firstpage/Firstpage'
-import Landingpage from './components/Landingpage/Landingpage'
 import Cheffi from './pages/Cheffi/Cheffi'
 import Community from './pages/Community/Community'
 import Tiffin from './pages/Tiffin/Tiffin'
@@ -18,7 +17,9 @@ import Help from './pages/Help/Help'
 import Report from './pages/Report/Report'
 import Blocked from './pages/Blocked/Blocked'
 import Login from './components/Login/Login'
-
+import HomePage from './components/HomePage/HomePage'
+import SignUpNew from './pages/SignUpNew/SignUpNew'
+import LoginNew from './pages/LoginNew/LoginNew'
 
 const App = () => {
   return (
@@ -26,10 +27,9 @@ const App = () => {
 
       <Routes>
 
-        <Route path = "/" element= {<Login/>} />
+        <Route path = "/login" element= {<Login/>} />
+        <Route path = "/home" element= {<HomePage/>} />
         <Route path = "/query" element= {<Querypage/>} />
-        <Route path = "/home" element= {<Landingpage/>} />
-        <Route path = "/submit" element= {<Landingpage/>} />
         <Route path = "/cheffi" element= {<Cheffi/>} />
         <Route path = "/community" element= {<Community/>} />
         <Route path = "/tiffin" element= {<Tiffin/>} />
@@ -39,10 +39,12 @@ const App = () => {
         <Route path = "/shopping" element= {<Shopping/>} />
         <Route path= '/myprofile' element= {<Profile/>} />
         <Route path= '/setting' element= {<Setting/>} />
-        
         <Route path= '/help' element= {<Help/>} />
         <Route path= '/report' element= {<Report/>} />
         <Route path= '/blocked' element= {<Blocked/>} />
+        <Route path= '/footer' element= {<Footer/>} />
+        <Route path= '/SignUpNew' element= {<SignUpNew/>} />
+        <Route path="/LoginNew" element={<LoginNew/>} />
 
 
 

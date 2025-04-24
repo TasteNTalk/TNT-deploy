@@ -1,14 +1,59 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Blocked - Taste'n Talk</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-    />
-    <script src="https://cdn.tailwindcss.com"></script>
-  </head>
-  
-</html>
+import React, { useEffect, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+
+const DashboardPage = () => {
+  const [userData, setUserData] = useState(null);
+  const [posts, setPosts] = useState([]);
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    // Get the JWT token from localStorage or state
+    const token = localStorage.getItem('token');
+
+    if (!token) {
+      navigate('/login');  // Redirect to login if token is not found
+      return;
+    }
+
+    const fetchDashboardData = async () => {
+      try {
+        const response = await fetch('/api/dashboard', {
+          method: 'GET',
+          headers: {
+            'Authorization': `Bearer ${token}`,
+          },
+        });
+
+        const data = await response.json();
+
+        if (response.ok) {
+          setUserData(data.user);
+          setPosts(data.posts);
+        } else {
+          alert(data.message || 'Error fetching dashboard data');
+        }
+      } catch (err) {
+        console.error('Error fetching dashboard data:', err);
+        alert('Error fetching dashboard data');
+      }
+    };
+
+    fetchDashboardData();
+  }, [navigate]);
+
+  if (!userData) return <div>Loading...</div>;
+
+  return (
+    <div>
+      <h1>Welcome to your Dashboard, {userData.username}!</h1>
+      <h2>Your Posts</h2>
+      <ul>
+        {posts.map(post => (
+          <li key={post._id}>{post.content}</li>  // Modify as per your post structure
+        ))}
+      </ul>
+    </div>
+  );
+};
+
+export default DashboardPage;
