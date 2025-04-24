@@ -32,7 +32,7 @@ const Login = () => {
   return (
     <GoogleOAuthProvider clientId="200023148286-clhbnme6pmsqvpk0do9s1h1pp4h0qmdc.apps.googleusercontent.com">
       
-        <div className="min-h-screen bg-gray-50">
+        <div className="min-h-screen bg-[#002140]">
           
 
           <div className="pt-28 pb-16">
