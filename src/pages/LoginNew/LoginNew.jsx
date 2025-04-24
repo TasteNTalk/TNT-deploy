@@ -25,12 +25,15 @@ const LoginNew = () => {
   
       if (res.ok) {
 <<<<<<< HEAD
+<<<<<<< HEAD
         // Handle successful login (e.g., storing token, redirecting)
         onLoginSuccess(data.token, data.userId);
         navigate("/home");
       } else {
         // Handle error response
 =======
+=======
+>>>>>>> d21d797ec54a5168899526c897435ac27adc6492
         // ✅ Store token in localStorage
         localStorage.setItem("token", data.token);
         localStorage.setItem("userId", data.userId);
@@ -38,7 +41,10 @@ const LoginNew = () => {
         // ✅ Redirect to homepage
         navigate("/home");
       } else {
+<<<<<<< HEAD
 >>>>>>> c52d2aa (Changes in submodule)
+=======
+>>>>>>> d21d797ec54a5168899526c897435ac27adc6492
         alert(data.message || "Login failed");
       }
     } catch (error) {
@@ -48,9 +54,13 @@ const LoginNew = () => {
   };
   
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
   
 >>>>>>> c52d2aa (Changes in submodule)
+=======
+  
+>>>>>>> d21d797ec54a5168899526c897435ac27adc6492
 
   return (
     <div className="bg-[#002140] min-h-screen flex justify-center items-center p-4">
