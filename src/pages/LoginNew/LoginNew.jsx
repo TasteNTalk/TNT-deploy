@@ -1,8 +1,6 @@
-// LoginNew.jsx
 import React, { useState } from "react";
 import { NavLink, useNavigate } from "react-router-dom";
 import Login from "../../assets/loginImage.jpg";
-import { apiRequest } from "../../../../server/src/utils/apiRequest";
 
 const LoginNew = () => {
   const [email, setEmail] = useState("");
@@ -11,7 +9,7 @@ const LoginNew = () => {
 
   const handleLogin = async (e) => {
     e.preventDefault();
-  
+
     try {
       const res = await fetch("/api/auth/login", {
         method: "POST",
@@ -20,31 +18,17 @@ const LoginNew = () => {
         },
         body: JSON.stringify({ email, password }),
       });
-  
+
       const data = await res.json();
-  
+
       if (res.ok) {
-<<<<<<< HEAD
-<<<<<<< HEAD
-        // Handle successful login (e.g., storing token, redirecting)
-        onLoginSuccess(data.token, data.userId);
-        navigate("/home");
-      } else {
-        // Handle error response
-=======
-=======
->>>>>>> d21d797ec54a5168899526c897435ac27adc6492
-        // ✅ Store token in localStorage
+        // ✅ Store token and userId in localStorage
         localStorage.setItem("token", data.token);
         localStorage.setItem("userId", data.userId);
-  
-        // ✅ Redirect to homepage
+
+        // ✅ Navigate to home
         navigate("/home");
       } else {
-<<<<<<< HEAD
->>>>>>> c52d2aa (Changes in submodule)
-=======
->>>>>>> d21d797ec54a5168899526c897435ac27adc6492
         alert(data.message || "Login failed");
       }
     } catch (error) {
@@ -52,15 +36,6 @@ const LoginNew = () => {
       alert("Error during login");
     }
   };
-  
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-  
->>>>>>> c52d2aa (Changes in submodule)
-=======
-  
->>>>>>> d21d797ec54a5168899526c897435ac27adc6492
 
   return (
     <div className="bg-[#002140] min-h-screen flex justify-center items-center p-4">
@@ -77,7 +52,9 @@ const LoginNew = () => {
 
           <form onSubmit={handleLogin} className="space-y-4">
             <div>
-              <label htmlFor="email" className="block text-sm font-medium text-[#002140] mb-2">Your Email</label>
+              <label htmlFor="email" className="block text-sm font-medium text-[#002140] mb-2">
+                Your Email
+              </label>
               <input
                 type="email"
                 id="email"
@@ -90,7 +67,9 @@ const LoginNew = () => {
             </div>
 
             <div>
-              <label htmlFor="password" className="block text-sm font-medium text-[#002140] mb-2">Password</label>
+              <label htmlFor="password" className="block text-sm font-medium text-[#002140] mb-2">
+                Password
+              </label>
               <input
                 type="password"
                 id="password"
@@ -102,13 +81,20 @@ const LoginNew = () => {
               />
             </div>
 
-            <button type="submit" className="w-full py-3 bg-[#002140] hover:bg-[#2f4255] text-white font-semibold rounded-lg">Log in</button>
+            <button
+              type="submit"
+              className="w-full py-3 bg-[#002140] hover:bg-[#2f4255] text-white font-semibold rounded-lg"
+            >
+              Log in
+            </button>
           </form>
 
           <div className="text-center mt-4">
             <p className="text-sm text-gray-600">
               Don't have an account?
-              <NavLink to="/SignUpNew" className="text-[#002140] font-medium hover:underline ml-1">Create an account</NavLink>
+              <NavLink to="/SignUpNew" className="text-[#002140] font-medium hover:underline ml-1">
+                Create an account
+              </NavLink>
             </p>
           </div>
         </div>
