@@ -1,5 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import "@fontsource/poppins";
 import homeicon from "../../assets/Homeicon.svg";
 import tntlogo from "../../assets/tntLogo.png";
 import profileicon from "../../assets/profile.svg";
@@ -18,7 +19,9 @@ import tiffinicon from "../../assets/Tiffin.svg";
 const Navbar = ({ children }) => {
   return (
     <div className="bg-[#002140] min-h-screen font-serif text-[#e2e4d6] m-0 p-0 box-border">
-      <header className="animate-fadeIn w-full flex items-center justify-between p-3 bg-[#e2e4d6] shadow-lg fixed top-0 left-0 right-0 z-10 h-[100px]">
+      <header
+        style={{ fontFamily: "Poppins, sans-serif" }}
+        className="animate-fadeIn w-full flex items-center justify-between p-3 bg-[#e2e4d6] shadow-lg fixed top-0 left-0 right-0 z-10 h-[87px]">
         <div className="flex items-center space-x-4">
           <div className="text-2xl font-bold hidden md:flex items-center gap-3 text-[#002140]">
             <img src={tntlogo} alt="" width="70px" className="rounded-full" />
@@ -207,7 +210,7 @@ const Navbar = ({ children }) => {
       </header>
 
       {/* <!-- Sidebar --> */}
-      <aside className="w-[250px] h-[calc(100vh-100px)] fixed top-[100px] left-0 bg-white/15 backdrop-blur-md p-4 border-r border-white/20 shadow-[5px_0_15px_rgba(0,0,0,0.1)] z-[5] overflow-y-hidden">
+      <aside className="w-[250px] h-[calc(100vh-100px)] fixed top-[87px] left-0 bg-white/15 backdrop-blur-md p-4 border-r border-white/20 shadow-[5px_0_15px_rgba(0,0,0,0.1)] z-[5] overflow-y-hidden">
         <nav className="flex flex-col justify-between text-[16px] font-semibold gap-4 text-[#e2e4d6]">
           {/* <!-- Reusable nav-link format for all items --> */}
           <div className="relative group">
